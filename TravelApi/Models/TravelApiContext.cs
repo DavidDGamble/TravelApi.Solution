@@ -10,5 +10,13 @@ namespace TravelApi.Models
     public TravelApiContext(DbContextOptions<TravelApiContext> options) : base(options)
     {
     }
+
+    protected override void OnModelCreating(ModelBuilder builder)
+    {
+      builder.Entity<User>()
+        .HasData(
+          new User { UserId = 1, UserName = "david", Password = "epicodus" }
+        );
+    }
   }
 }
