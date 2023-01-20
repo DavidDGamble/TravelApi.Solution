@@ -34,7 +34,7 @@ An API that functions as a recipe archive for coffee drinks from around the worl
     },
     "AllowedHosts": "*",
     "ConnectionStrings": {
-      "DefaultConnection": "Server=localhost;Port=3306;database=travel_api;uid=root;pwd=epicodus;"
+      "DefaultConnection": "Server=localhost;Port=3306;database=[DATABASE_NAME];uid=[USERNAME];pwd=[PASSWORD];"
     }
   }
 
@@ -85,7 +85,8 @@ https://localhost:5001/api/Destinations/1
   "destinationId": 1,
   "name": "portland",
   "reviews": null
-} ```
+} 
+```
 
 #### Example Query
 
@@ -94,12 +95,14 @@ https://localhost:5001/api/Reviews/5
 
 ```
 #### Sample JSON Response
-``` {
+``` 
+{
   "reviewId": 5,
   "summary": "gresham sucks",
   "rating": 2,
   "destinationId": 2
-} ```
+}
+```
 
 ## Known Bugs
 
@@ -114,16 +117,3 @@ _Permission is hereby granted, free of charge, to any person obtaining a copy of
 _The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software._
 
 _THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE._
-
-### 🌟 Acknowledgments
-
-#### [Epicodus](https://www.epicodus.com/)
->"A school for tech careers... to help people learn the skills they need to get great jobs."
-
-#### [The Internet](https://webfoundation.org/)
-> "...the first thing that humanity has built that humanity doesn't understand..."
-> - Eric Schmidt, Google (Alphabet Inc.)
-
-------------------------------
-
-<center><a href="#">Return to Top</a></center>
