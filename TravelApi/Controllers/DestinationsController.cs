@@ -1,12 +1,13 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 using TravelApi.Models;
 
 namespace TravelApi.Controllers
 {
   [Route("api/[controller]")]
-  [Authorize]
   [ApiController]
+  [Authorize]
   public class DestinationsController : ControllerBase
   {
     private readonly TravelApiContext _db;
@@ -26,6 +27,8 @@ namespace TravelApi.Controllers
         return NotFound();
       }
       return destination;
+
+      
     }
 
     [HttpGet]

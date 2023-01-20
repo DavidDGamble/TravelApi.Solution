@@ -85,6 +85,7 @@ else
 
 //vvvvv--- Added for token authorization ---vvvvv
 app.UseHttpsRedirection();
+builder.Services.AddSingleton<IConfiguration>(builder.Configuration);
 app.MapGet("/security/getMessage", () => "Hello World!").RequireAuthorization();
 app.MapPost("/security/createToken",
 [AllowAnonymous] (User user) =>
